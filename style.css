@@ -1,0 +1,30 @@
+    body{
+        background-color: rgb(23, 27, 31);
+    }
+
+    .main_header{
+        z-index: 100; 
+        top: 0px;
+        height: 160px;
+        display: flex;
+        justify-content: space-between;
+        justify-items:center;
+        position: sticky;
+        background-color: rgba(23, 27, 31, 50);
+        padding-top: 30px;
+        /* background-color: antiquewhite; */
+    }
+    .main_icon{
+        color: rgb(166, 176, 179);
+    }
+@media all and (max-width: 1920px) {
+
+}
+
+@media all and (max-width: 1200px){
+
+}
+
+@media all and ( max-width: 600px){
+
+}
