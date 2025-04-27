@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <span style="font-family: 'Courier New', Courier, monospace; color: rgb(166, 176, 179);" class="main_icon">Abbysea</span>
+        
+        <div class="nav">
+            <span class="nav-link" data-target="home" style="color: white;">Home</span>
+            <span class="nav-link" data-target="cart" style="color: white;">Cart</span>
+            <span class="nav-link" data-target="contacts" style="color: white;">Contacts</span>
+            <span class="nav-link" data-target="login" style="color: white;">Log in</span>
+        </div>
+    </div>
+
+    <div class="contentCart">
+            <h1 style="text-align:center; color:white;">Your Cart:</h1>
+        <div id="cart-items" class="cart-container"></div>
+
+        <div class="knopochki">
+            <span class="delete">
+                <button id="delete">delete</button>
+            </span>
+            <span class="checkout">
+                <button id="purchase">Purchase</button>
+            </span>
+
+        </div>
+    </div>
+    
+<script src="cart.js"></script>
+</body>
+</html>
