@@ -1,0 +1,13 @@
+document.querySelector('.add-to-cart').addEventListener('click', function() {
+    const product13 = {
+        name: "Abyssea T-Shirt",
+        price: "¥9,020",
+        image: "./Abyssea/t_shirt (2).jpg"
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product13);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    window.location.href = "cart.html";
+});
