@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abyssea Product</title>
+    <link rel="stylesheet" href="styleProducts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <span style="font-family: 'Courier New', Courier, monospace; color: rgb(166, 176, 179);" class="main_icon">Abbysea</span>
+        
+        <div class="nav">
+            <span class="nav-link" data-target="home" style="color: white;">Home</span>
+            <span class="nav-link" data-target="cart" style="color: white;">Cart</span>
+            <span class="nav-link" data-target="contacts" style="color: white;">Contacts</span>
+            <span class="nav-link" data-target="login" style="color: white;">Log in</span>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="card">
+            <div class="swiper-wrapper-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Abyssea/neverthesame_hoodie (2).jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Abyssea/neverthesame_hoodie (3).jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Abyssea/neverthesame_hoodie.jpg" alt="" />
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="product-info">
+            <h2  style="color: white;">Abyssea photo big hoodie</h2>
+            <div class="price-cart"> 
+                <div class="price" style="color: white;">¥11,880 (税込)</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="description" style="color: rgb(141, 141, 141);">
+                TAKUMA自身がカメラを手に取りグラフィックを指示し製作された大人気コレクション。
+「Poster」
+決して同じではない。ポスターもそれを見る人により違うイメージを持つ。ならば存在を無くしても同じこと。
+裏起毛素材のヘビージャージスウェット素材にワンポイントのAbysseaロゴを刺繍したフロントデザインとなっております。
+            </div>
+        </div>
+    </div>
+    
+    <script src="product11.js"></script>
+</body>
+</html>
