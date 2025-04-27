@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(23, 27, 31);
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    z-index: 100; 
+    top: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: rgba(23, 27, 31, 0.9);
+    padding: 30px 50px;
+}
+.nav-link {    
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+
+}
+
+.nav-link:hover {
+    color: rgb(166, 176, 179);
+    transform: scale(1.05);
+}
+
+.nav-link.active {
+    color: rgb(166, 176, 179);
+    font-weight: bold;
+}
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cart-item {
+    background-color: #2e3338;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.contentCart {
+    background-color: rgb(33, 38, 43) ;
+    margin: 0 auto; 
+    width:80%;
+
+}
+.cart-item img {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.knopochki{
+        text-align: center;
+        margin-top: 30px;
+        
+}
+
+.checkout button {
+    background-color: #009e5f;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.delete button {
+    background-color: #630000;
+    color: rgb(212, 212, 212);
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10%;
+}
+@media all and (max-width: 1920px) {
+    .nav {
+        display: flex;
+        gap: 70px;
+        font-size: 24px;
+      }
+    .main_icon {
+        font-size: 26px;
+    }
+
+}
+
+@media all and (max-width: 1200px){
+    .nav {
+        display: flex;
+        gap: 70px;
+        font-size: 22px;
+      }
+    .main_icon {
+        font-size: 24px;
+    }
+}
+
+@media all and ( max-width: 600px){
+    .nav {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .main_icon {
+        font-size: 22px;
+    }
+}
