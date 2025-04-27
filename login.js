@@ -5,7 +5,6 @@ const eye = document.getElementById('eye');
 const submitButton = form.querySelector('.submit-btn');
 const backButton = document.querySelector('.back-btn');
 
-
 let isPasswordVisible = false;
 
 eye.addEventListener("mouseenter", () => {
@@ -23,7 +22,7 @@ eye.addEventListener("click", () => {
     passwordInput.type = isPasswordVisible ? "text" : "password";
 });
 
-function Add_user(event) {
+function loginUser(event) {
     event.preventDefault();
 
     let login = nameInput.value.trim();
@@ -35,7 +34,7 @@ function Add_user(event) {
 
     if (!regExEmail.test(login)) {
         nameInput.classList.add("error");
-        alert("invalid email");
+        alert("Invalid email");
         isValid = false;
     } else {
         nameInput.classList.remove("error");
@@ -43,29 +42,33 @@ function Add_user(event) {
 
     if (!regExPassword.test(password)) {
         passwordInput.classList.add("error");
-        alert("the password must consist of at least 6 nums and one letter");
+        alert("The password must consist of at least 6 characters and one number");
         isValid = false;
     } else {
         passwordInput.classList.remove("error");
     }
 
-
-    
     if (!isValid) return;
 
-    if (localStorage.getItem(login)) {
-        alert("User is already logged in");
+    const storedUser = localStorage.getItem(login);
+
+    if (!storedUser) {
+        alert("User not found. Please register first.");
         return;
     }
 
-    let user_data = { login, password, number };
-    localStorage.setItem(login, JSON.stringify(user_data));
-    alert("User was already registrated");
+    const parsedUser = JSON.parse(storedUser);
+
+    if (parsedUser.password !== password) {
+        alert("Incorrect password.");
+        return;
+    }
+
+    alert("Login successful!");
+    window.location.href = 'home.html';
 }
-submitButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = 'index.html';
-});
+
+submitButton.addEventListener('click', loginUser);
 
 backButton.addEventListener('click', function(event) {
     event.preventDefault(); 
