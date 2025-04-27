@@ -73,6 +73,7 @@ function Add_user(event) {
     alert("User was already registrated");
 }
 
+
 submitButton.addEventListener('click', Add_user);
 
 loginButton.addEventListener('click', function(event) {
@@ -82,5 +83,7 @@ loginButton.addEventListener('click', function(event) {
 
 submitButton.addEventListener('click', function(event) {
     event.preventDefault();
-    window.location.href = 'index.html';
+    window.location.href = 'home.html';
 });
+
+
